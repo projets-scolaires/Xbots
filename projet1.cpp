@@ -9,6 +9,7 @@
 #include"G990.h"
 #include"W000.h"
 #include "Compteur.h"
+#include "TesteurXBots.h"
 
 void testX212()
 {
@@ -398,10 +399,57 @@ void testChargementXBots() {
 
 
 
+void testPointeursXBots() {
+	X212* x212 = new X212("x212", 0, 4, 3, 5);
+	X213* x213 = new X213("x213", 0, 4, 3, 5);
+	X215* x215 = new X215("x215", 0, 4, 3, 5);
+	R234* r234 = new R234(0, 4, 3, 5);
+	G990* g990 = new G990(true, false, 7, 7, 5);
+	W000* w000 = new W000("W000", 0, 4, 3, 5);
+	X212* x212Copie = new X212(*x212);
+	X213* x213Copie = new X213(*x213);
+	X215* x215Copie = new X215(*x215);
+	R234* r234Copie = new R234(*r234);
+	G990* g990Copie = new G990(*g990);
+	W000* w000Copie = new W000(*w000);
+
+	cout << "X212 : " << x212->getNom() << "/"
+		<< x212Copie->getNom() << endl; cout << "X213 : "
+		<< x213->getNom() << "/" << x213Copie->getNom() << endl;
+	cout << "X215 : " << x215->getNom() << "/" << x215Copie->getNom() << endl;
+	cout << "R234 : " << r234->getStrength() << "/" << r234Copie->getStrength() << endl;
+	cout << "G990: " << g990->getEnergiePhysique() << "/" << g990Copie->getEnergiePhysique() << endl;
+	cout << "W000 : " << w000->getNom() << "/" << w000Copie->getNom() << endl;
+
+	delete x212;
+	delete x213;
+	delete x215;
+	delete r234;
+	delete g990;
+	delete w000;
+	delete x212Copie;
+	delete x213Copie;
+	delete x215Copie;
+	delete r234Copie;
+	delete g990Copie;
+	delete w000Copie;
+}
+
+
+
+void testeur()
+{
+	TesteurXBots testeur1(new X212("X212", 1, 1, 1, 1), new G990(true, true, 1, 1, 1));
+	TesteurXBots testeur2(testeur1);
+}
+
+
 int main()
 {
 	testsXBots();   // Semaine #2
-	testChargementXBots();   // Semaine #3 
+	//testChargementXBots();   // Semaine #3 
+	testPointeursXBots(); // Semaine #4
+	//testeur(); // Semaine #4
 	cout << Compteur::getInformation() << endl; cin.get();
 }
 

@@ -131,6 +131,7 @@
     <ClCompile Include="G990.cpp" />
     <ClCompile Include="projet1.cpp" />
     <ClCompile Include="R234.cpp" />
+    <ClCompile Include="TesteurXBots.cpp" />
     <ClCompile Include="W000.cpp" />
     <ClCompile Include="X212.cpp" />
     <ClCompile Include="X213.cpp" />
@@ -140,10 +141,14 @@
     <ClInclude Include="Compteur.h" />
     <ClInclude Include="G990.h" />
     <ClInclude Include="R234.h" />
+    <ClInclude Include="TesteurXBots.h" />
     <ClInclude Include="W000.h" />
     <ClInclude Include="X212.h" />
     <ClInclude Include="X213.h" />
     <ClInclude Include="X215.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
