@@ -2,13 +2,13 @@
 #include<iostream>
 #include "X212.h"
 #include "G990.h"
-using namespace std; 
+using namespace std;
 
 #include "Compteur.h"
 
 class TesteurXBots
 {
-private :
+private:
 	X212* x212;
 	G990* g990;
 
@@ -17,7 +17,6 @@ public:
 	TesteurXBots(X212* x212, G990* g990);
 
 	~TesteurXBots();
-	TesteurXBots(const TesteurXBots& testeurXBots);
+	TesteurXBots(const TesteurXBots& testeurXBots);//constructeur par copie
 
 };
-

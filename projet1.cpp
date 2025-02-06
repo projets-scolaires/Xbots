@@ -448,8 +448,8 @@ int main()
 {
 	testsXBots();   // Semaine #2
 	//testChargementXBots();   // Semaine #3 
-	testPointeursXBots(); // Semaine #4
-	//testeur(); // Semaine #4
+	//testPointeursXBots(); // Semaine #4
+	testeur(); // Semaine #4
 	cout << Compteur::getInformation() << endl; cin.get();
 }
 
