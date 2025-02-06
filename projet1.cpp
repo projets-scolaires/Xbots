@@ -446,7 +446,7 @@ void testeur()
 
 int main()
 {
-	testsXBots();   // Semaine #2
+	//testsXBots();   // Semaine #2
 	//testChargementXBots();   // Semaine #3 
 	//testPointeursXBots(); // Semaine #4
 	testeur(); // Semaine #4
