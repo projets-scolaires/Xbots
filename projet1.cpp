@@ -2,14 +2,19 @@
 //
 
 #include <iostream>
+/*
 #include"X212.h"
 #include"X213.h"
 #include"X215.h"
 #include"R234.h"
 #include"G990.h"
 #include"W000.h"
-#include "Compteur.h"
 #include "TesteurXBots.h"
+*/
+
+#include "Compteur.h"
+
+/*
 
 void testX212()
 {
@@ -52,7 +57,9 @@ void testX212()
 	cout << "ESQUIVE";
 	cout << "-. (" << x << "," << y << "," << x212.getDirection() << ")" << endl;
 }
+*/
 
+/*
 void testX213()
 {
 	int x = 3;
@@ -98,7 +105,9 @@ void testX213()
 	cout << "TOURNER LES TALONS ";
 	cout << "-. (" << x << "," << y << "," << x213.getDirection() << ")" << endl;
 }
+*/
 
+/*
 void testX215()
 {
 	int x = 3;
@@ -151,7 +160,9 @@ void testX215()
 	cout << "ESQUIVE";
 	cout << "-. (" << x << "," << y << "," << x215.getDirection() << ")" << endl;
 }
+*/
 
+/*
 void testR234()
 {
 	int x = 3;
@@ -205,6 +216,10 @@ void testR234()
 	cout << "-. (" << x << "," << y << "," << r234.getDirection() << ")" << endl;
 }
 
+*/
+
+
+/*
 void testG990()
 {
 	int x = 3;
@@ -278,7 +293,9 @@ void testG990()
 	g990.bloquer(xAmi, yAmi, x, y, xEnnemi, yEnnemi);
 	cout << "-. (" << x << "," << y << ")" << endl;
 }  
+*/
 
+/*
 void testW000()
 {
 	int x = 3;
@@ -332,7 +349,9 @@ void testW000()
 	w000.bloquer(xAmi, yAmi, x, y, xEnnemi, yEnnemi);
 	cout << "-. (" << x << "," << y << ")" << endl;
 }
+*/
 
+/*
 void testsXBots()
 
 {
@@ -372,7 +391,9 @@ void testsXBots()
 	} while (choix != 'q');
 }
 
+*/
 
+/*
 
 void testChargementXBots() {
 	X212 x212("x212", 0, 4, 3, 5); 
@@ -397,7 +418,9 @@ void testChargementXBots() {
 }
 
 
+*/
 
+/*
 
 void testPointeursXBots() {
 	X212* x212 = new X212("x212", 0, 4, 3, 5);
@@ -434,24 +457,45 @@ void testPointeursXBots() {
 	delete g990Copie;
 	delete w000Copie;
 }
+*/
 
 
-
+/*
 void testeur()
 {
 	TesteurXBots testeur1(new X212("X212", 1, 1, 1, 1), new G990(true, true, 1, 1, 1));
 	TesteurXBots testeur2(testeur1);
-}
+}  */
 
 
-int main()
+/*
+int main2()
 {
 	//testsXBots();   // Semaine #2
 	//testChargementXBots();   // Semaine #3 
 	//testPointeursXBots(); // Semaine #4
 	testeur(); // Semaine #4
 	cout << Compteur::getInformation() << endl; cin.get();
+	return 0;
+} */
+
+
+
+//void (testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu) {
+	// AJOUTER 4 XBOTS à l’équipe ROUGE 
+	//  AJOUTER 5 XBOTS à l’équipe BLEU 
+	// AFFICHER l’équipe rouge (utiliser la méthode getNombreXBots) 
+    // AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
+	
+//} 
+
+int main() {
+	 //CRÉER l’équipe ROUGE de 4 XBots sur la pile (stack) 
+    // CRÉER l’équipe BLEU de 5 XBots dans le tas (heap) 
+	// APPELER testChargementEquipes 
+	// CRÉER l’arène 
+	// Débuter le combat! 
+     cout << Compteur::getInformation() << endl; cin.get();
+	return 0; 
 }
-
-
 

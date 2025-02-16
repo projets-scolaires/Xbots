@@ -127,7 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arene.cpp" />
     <ClCompile Include="Compteur.cpp" />
+    <ClCompile Include="Equipe.cpp" />
     <ClCompile Include="G990.cpp" />
     <ClCompile Include="projet1.cpp" />
     <ClCompile Include="R234.cpp" />
@@ -136,9 +138,12 @@
     <ClCompile Include="X212.cpp" />
     <ClCompile Include="X213.cpp" />
     <ClCompile Include="X215.cpp" />
+    <ClCompile Include="XBot.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arene.h" />
     <ClInclude Include="Compteur.h" />
+    <ClInclude Include="Equipe.h" />
     <ClInclude Include="G990.h" />
     <ClInclude Include="R234.h" />
     <ClInclude Include="TesteurXBots.h" />
@@ -146,6 +151,7 @@
     <ClInclude Include="X212.h" />
     <ClInclude Include="X213.h" />
     <ClInclude Include="X215.h" />
+    <ClInclude Include="XBot.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
