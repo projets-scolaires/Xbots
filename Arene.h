@@ -12,8 +12,8 @@ private:
 
 public : 
 	Arene(Equipe& equipe1, Equipe& equipe2);
-	//Arene(const Arene& arene) = delete;
-	Arene(const Arene& arene);
+	//Arene(const Arene& arene) 
+	Arene(const Arene& arene) = delete;
 	~Arene();
 	
 

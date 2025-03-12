@@ -14,15 +14,16 @@ private:
 
 public:
 	Equipe(string nom, int nombreXBots) ;
-	Equipe(const Equipe& equipe);
+    Equipe(const Equipe& equipe);
 	//Equipe(const Equipe& equipe) = delete ;
-	~Equipe() ; 
+	virtual ~Equipe() ; 
 
 	void ajouterXBots(XBot* xBot, int position) ;
 	XBot& getXBot(int i) const { return *this->xBots[i]; };
-	int getNombreXBots() const { return this->nombreXBots ; } ;
+    int getNombreXBots() const { return this->nombreXBots ; } ;
 	void setNombreXBots(int nombreXBots) ;
 
+friend ostream& operator <<(ostream& out, const Equipe& f);
 
 	
 } ;

@@ -13,6 +13,11 @@
 */
 
 #include "Compteur.h"
+#include "Equipe.h"
+#include "XBot.h"
+#include "Arene.h"
+#include "XBot1.h"
+#include "XBot2.h"
 
 /*
 
@@ -481,21 +486,128 @@ int main2()
 
 
 
-//void (testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu) {
-	// AJOUTER 4 XBOTS à l’équipe ROUGE 
-	//  AJOUTER 5 XBOTS à l’équipe BLEU 
-	// AFFICHER l’équipe rouge (utiliser la méthode getNombreXBots) 
-    // AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
+void (testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu)){
+	 // AJOUTER 4 XBOTS à l’équipe ROUGE
+	cout << "\n Chargement des xbots, equipe Rouge \n";
+	XBot* rougeBot1 = new XBot("rougeBot1");
+	XBot* rougeBot2 = new XBot("rougeBot2");
+	XBot* rougeBot3 = new XBot("rougeBot3");
+	XBot* rougeBot4 = new XBot("rougeBot4"); 
+	equipeRouge.ajouterXBots(rougeBot1, 0);
+	equipeRouge.ajouterXBots(rougeBot2, 1); 
+	equipeRouge.ajouterXBots(rougeBot3, 2);
+	equipeRouge.ajouterXBots(rougeBot4, 3);
+
+	 //AJOUTER 5 XBOTS à l’équipe BLEU
+	cout << "\n Chargement des xbots, equipe Bleu \n";
+	XBot* bleuBot1 = new XBot("bleuBot1");
+	XBot* bleuBot2 = new XBot("bleuBot2");
+	XBot* bleuBot3 = new XBot("bleuBot3");
+	XBot* bleuBot4 = new XBot("bleuBot4");
+	XBot* bleuBot5 = new XBot("bleuBot5");
+
+	equipeBleu->ajouterXBots(bleuBot1, 0);
+	equipeBleu->ajouterXBots(bleuBot2, 1);
+	equipeBleu->ajouterXBots(bleuBot3, 2);
+	equipeBleu->ajouterXBots(bleuBot4, 3);
+	equipeBleu->ajouterXBots(bleuBot5, 4);
 	
-//} 
+	 //AFFICHER l’équipe rouge (utiliser la méthode getNombreXBots) 
+	equipeRouge.getNombreXBots();
+     //AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
+	equipeBleu->getNombreXBots();
+	
+	//On va détruire les pointeurs
+
+	    /*delete rougeBot1;
+		delete rougeBot2 ;
+		delete rougeBot3 ;
+		delete rougeBot4 ;
+		delete bleuBot1 ;
+		delete bleuBot2 ;
+		delete bleuBot3 ;
+		delete bleuBot4 ;
+		delete bleuBot5 ;
+		*/
+		
+} 
+
+
+
+void(testChargementEquipesHeritage(Equipe& equipeRouge, Equipe* equipeBleu)) {
+
+	// AJOUTER 4 XBOTS1 à l’équipe ROUGE
+	cout << "ajout de 4 XBOt1 a l'equipe Rouge  \n";
+	XBot1* xbot1Rouge1 = new XBot1("xbot1Rouge1");
+	XBot1* xbot1Rouge2 = new XBot1("xbot1Rouge2");
+	XBot1* xbot1Rouge3 = new XBot1("xbot1Rouge3");
+	XBot1* xbot1Rouge4 = new XBot1("xbot1Rouge4");
+	equipeRouge.ajouterXBots(xbot1Rouge1, 0);
+	equipeRouge.ajouterXBots(xbot1Rouge2, 1);
+	equipeRouge.ajouterXBots(xbot1Rouge3, 2);
+	equipeRouge.ajouterXBots(xbot1Rouge4, 3);
+
+
+	//AJOUTER 5 XBOTS2 à l’équipe BLEU
+	cout << "\n Chargement des xbots, equipe Bleu \n";
+
+	XBot2* xbot2bleu1 = new XBot2("xbot2bleu1");
+	XBot2* xbot2bleu2 = new XBot2("xbot2bleu2");
+	XBot2* xbot2bleu3 = new XBot2("xbot2bleu3");
+	XBot2* xbot2bleu4 = new XBot2("xbot2bleu4");
+	XBot2* xbot2bleu5 = new XBot2("xbot2bleu5");
+		
+	equipeBleu->ajouterXBots(xbot2bleu1, 0);
+	equipeBleu->ajouterXBots(xbot2bleu2, 1);
+	equipeBleu->ajouterXBots(xbot2bleu3, 2);
+	equipeBleu->ajouterXBots(xbot2bleu4, 3);
+	equipeBleu->ajouterXBots(xbot2bleu5, 4);
+
+	//AFFICHER l’équipe rouge (utiliser la méthode getNombreXBots) 
+	equipeRouge.getNombreXBots();
+	//AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
+	equipeBleu->getNombreXBots();
+
+	/*delete xbot1Rouge1;
+	delete xbot1Rouge2;
+	delete xbot1Rouge3;
+	delete xbot1Rouge4;
+	delete xbot2bleu1;
+	delete xbot2bleu2;
+	delete xbot2bleu3;
+	delete xbot2bleu4;
+	delete xbot2bleu5;*/
+	
+	
+
+}
 
 int main() {
+	cout << "Realise par Wilson FOTSING  et Laurent Fabrice NGWE \n" ;
 	 //CRÉER l’équipe ROUGE de 4 XBots sur la pile (stack) 
+	Equipe equipeRouge("ROUGE", 4) ;
+
     // CRÉER l’équipe BLEU de 5 XBots dans le tas (heap) 
+	
+	Equipe* equipeBleu = new Equipe("BLEU", 5);
 	// APPELER testChargementEquipes 
+
+	testChargementEquipesHeritage(equipeRouge,equipeBleu);
+
+	//testChargementEquipes(equipeRouge, equipeBleu);
+	cout << endl;
 	// CRÉER l’arène 
+	Arene arene(equipeRouge, *equipeBleu);
+	cout << equipeRouge << endl;
+	cout << *equipeBleu << endl;
 	// Débuter le combat! 
-     cout << Compteur::getInformation() << endl; cin.get();
+	arene.debuterCombat();
+
+     cout << Compteur::getInformation() << endl; 
+	 cin.get();
+ 
+	 delete equipeBleu;
+	 
 	return 0; 
 }
 

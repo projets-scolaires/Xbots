@@ -1,7 +1,7 @@
 #include "Compteur.h"
 
 int Compteur::constructeur = 0;
-int Compteur::destructeur = 0;
+int Compteur::destructeur ;
 int Compteur::constructeurCopie = 0;
 
 void Compteur::ajouterConstructeur()

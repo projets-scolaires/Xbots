@@ -139,6 +139,8 @@
     <ClCompile Include="X213.cpp" />
     <ClCompile Include="X215.cpp" />
     <ClCompile Include="XBot.cpp" />
+    <ClCompile Include="XBot1.cpp" />
+    <ClCompile Include="XBot2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arene.h" />
@@ -152,6 +154,8 @@
     <ClInclude Include="X213.h" />
     <ClInclude Include="X215.h" />
     <ClInclude Include="XBot.h" />
+    <ClInclude Include="XBot1.h" />
+    <ClInclude Include="XBot2.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
