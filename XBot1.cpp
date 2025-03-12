@@ -16,6 +16,7 @@ XBot1::XBot1(const XBot1& xBot1):XBot(xBot1)
 XBot1::~XBot1()
 {
 	Compteur::ajouterDestructeur();
+	XBot::~XBot();
 }
 
 void XBot1::defendre(int degat)

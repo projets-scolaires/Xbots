@@ -517,18 +517,6 @@ void (testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu)){
      //AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
 	equipeBleu->getNombreXBots();
 	
-	//On va détruire les pointeurs
-
-	    /*delete rougeBot1;
-		delete rougeBot2 ;
-		delete rougeBot3 ;
-		delete rougeBot4 ;
-		delete bleuBot1 ;
-		delete bleuBot2 ;
-		delete bleuBot3 ;
-		delete bleuBot4 ;
-		delete bleuBot5 ;
-		*/
 		
 } 
 
@@ -592,9 +580,11 @@ int main() {
 	Equipe* equipeBleu = new Equipe("BLEU", 5);
 	// APPELER testChargementEquipes 
 
+    //testChargementEquipes(equipeRouge, equipeBleu);
+
 	testChargementEquipesHeritage(equipeRouge,equipeBleu);
 
-	//testChargementEquipes(equipeRouge, equipeBleu);
+
 	cout << endl;
 	// CRÉER l’arène 
 	Arene arene(equipeRouge, *equipeBleu);
@@ -602,11 +592,13 @@ int main() {
 	cout << *equipeBleu << endl;
 	// Débuter le combat! 
 	arene.debuterCombat();
+	delete equipeBleu;
+
 
      cout << Compteur::getInformation() << endl; 
 	 cin.get();
  
-	 delete equipeBleu;
+	
 	 
 	return 0; 
 }

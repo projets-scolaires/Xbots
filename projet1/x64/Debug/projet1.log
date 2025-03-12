@@ -1,5 +1,27 @@
-﻿  projet1.cpp
+﻿  Arene.cpp
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'Arene.cpp')
+  
+  Equipe.cpp
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'Equipe.cpp')
+  
+  XBot.cpp
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'XBot.cpp')
+  
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.cpp(45,14): warning C4244: 'return' : conversion de 'double' en 'int', perte possible de données
+  XBot1.cpp
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'XBot1.cpp')
+  
+  XBot2.cpp
+C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
+  (compiler le fichier source 'XBot2.cpp')
+  
+  projet1.cpp
 C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\XBot.h(5,10): warning C4067: jetons inattendus après la directive du préprocesseur - saut de ligne attendu
   (compiler le fichier source 'projet1.cpp')
   
+  Génération de code en cours...
   projet1.vcxproj -> C:\Users\fotsi\Documents\uqac\Hiver-25\POO\projet1\x64\Debug\projet1.exe

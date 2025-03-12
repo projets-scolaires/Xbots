@@ -46,7 +46,7 @@ int XBot::calculerDistance(int x1, int y1, int x2, int y2)
 }
 
 ostream& operator<<(ostream& os, const XBot& xbot) {
-	os << "XBot: " << xbot.nom;
+	os << "Je me nomme " << xbot.nom;
 	return os;
 }
 

@@ -16,7 +16,7 @@ public:
 	Equipe(string nom, int nombreXBots) ;
     Equipe(const Equipe& equipe);
 	//Equipe(const Equipe& equipe) = delete ;
-	virtual ~Equipe() ; 
+    ~Equipe() ; 
 
 	void ajouterXBots(XBot* xBot, int position) ;
 	XBot& getXBot(int i) const { return *this->xBots[i]; };

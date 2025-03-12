@@ -14,7 +14,7 @@ public:
 	//XBot();  
 	XBot(string nom);
 	XBot(const XBot& xBot);
-	virtual ~XBot(); // <-- Destructeur 
+    virtual ~XBot();
 	
 	string getNom() const {return this->nom; };
 	void bouger(int xAmi, int yAmi, int& x, int& y, int xEnnemi, int yEnnemi) ; 
@@ -24,6 +24,6 @@ public:
 protected:
 	int calculerDistance(int x1, int y1, int x2, int y2);
 
-friend ostream& operator <<(ostream& out, const XBot& f);
+	friend ostream& operator <<(ostream& out, const XBot& f);
 }; 
 

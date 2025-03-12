@@ -34,6 +34,7 @@ Equipe::~Equipe()
 	}
 	delete[] xBots ;
 	Compteur::ajouterDestructeur();
+	//Compteur::ajouterDestructeur();
 }
 
 void Equipe::ajouterXBots(XBot* xBot, int position)

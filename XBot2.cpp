@@ -13,5 +13,6 @@ XBot2::XBot2(const XBot2& xBot2):XBot(xBot2.getNom())
 XBot2::~XBot2()
 {
 	Compteur::ajouterDestructeur();
+	XBot::~XBot();
 }
 

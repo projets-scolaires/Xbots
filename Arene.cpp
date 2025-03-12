@@ -21,7 +21,7 @@ Arene::~Arene()
 
 
 void Arene::debuterCombat() {
-	cout << "debut du combat \n ";
+	cout << " debut du combat \n ";
 	for (Equipe* equipe : this->equipes) {
 		for (int i = 0; i < equipe->getNombreXBots(); i++) {
 			int x = 0;
