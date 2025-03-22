@@ -130,6 +130,7 @@
     <ClCompile Include="Arene.cpp" />
     <ClCompile Include="Compteur.cpp" />
     <ClCompile Include="Equipe.cpp" />
+    <ClCompile Include="fabriqueXBots.cpp" />
     <ClCompile Include="G990.cpp" />
     <ClCompile Include="projet1.cpp" />
     <ClCompile Include="R234.cpp" />
@@ -141,11 +142,13 @@
     <ClCompile Include="XBot.cpp" />
     <ClCompile Include="XBot1.cpp" />
     <ClCompile Include="XBot2.cpp" />
+    <ClCompile Include="XBotInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arene.h" />
     <ClInclude Include="Compteur.h" />
     <ClInclude Include="Equipe.h" />
+    <ClInclude Include="fabriqueXBots.h" />
     <ClInclude Include="G990.h" />
     <ClInclude Include="R234.h" />
     <ClInclude Include="TesteurXBots.h" />
@@ -156,6 +159,7 @@
     <ClInclude Include="XBot.h" />
     <ClInclude Include="XBot1.h" />
     <ClInclude Include="XBot2.h" />
+    <ClInclude Include="XBotInterface.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />

@@ -556,18 +556,7 @@ void(testChargementEquipesHeritage(Equipe& equipeRouge, Equipe* equipeBleu)) {
 	//AFFICHER l’équipe bleue (utiliser la méthode getNombreXBots) 
 	equipeBleu->getNombreXBots();
 
-	/*delete xbot1Rouge1;
-	delete xbot1Rouge2;
-	delete xbot1Rouge3;
-	delete xbot1Rouge4;
-	delete xbot2bleu1;
-	delete xbot2bleu2;
-	delete xbot2bleu3;
-	delete xbot2bleu4;
-	delete xbot2bleu5;*/
 	
-	
-
 }
 
 int main() {
