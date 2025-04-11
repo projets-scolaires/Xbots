@@ -1,33 +1,27 @@
 #pragma once
-#include<iostream>
-#include "XBot.h" ;
-#include "Compteur.h" ;
-using namespace std; 
+#include <iostream>
+#include "Compteur.h"
 
-class XBotInterface 
+using namespace std;
+
+class XBotInterface
 {
-public :
-	XBotInterface(XBot* xBot);
-	XBotInterface(const XBotInterface& xBot);
-	virtual ~XBotInterface();
+public:
+	XBotInterface() { Compteur::ajouterConstructeur(); }
+	XBotInterface(const XBotInterface& xbi) { Compteur::ajouterConstructeurCopie(); }
+	virtual ~XBotInterface() { Compteur::ajouterDestructeur(); }
 
-	virtual string getNom() const { return nom; }
-	virtual void bouger(int xAmi, int yAmi, int& x, int& y, int xEnnemi, int yEnnemi);
-	virtual int attaquer(int xAmi, int yAmi, int xEnnemi, int yEnnemi);
-	virtual void defendre(int degat);
-	virtual bool estFonctionnel() const; 
+	virtual string getNom() const { return "XBot"; }
+	virtual void bouger(int xAmi, int yAmi, int& x, int& y, int xEnnemi, int yEnnemi) {}
+	virtual int attaquer(int xAmi, int yAmi, int xEnnemi, int yEnnemi) { return 0; }
+	virtual void defendre(int degat) {}
+	virtual bool estFonctionnel() const { return true; }
 
-	friend ostream& operator << (ostream os, const XBot& xBot) {
-		return os;
-	}
-
-	friend ostream & operator <<(ostream& out, const XBotInterface& xbi) {
-		out << "XBOT { " << xbi.getNom() << "}"; 
+	friend ostream& operator <<(ostream& out, const XBotInterface& xbi) {
+		out << "XBOT { " << xbi.getNom() << " }";
 		return out;
 	}
+
 protected:
-	int  calculerDistance(int x1, int y1, int x2, int y2)  const ;
-	string nom;
-
+	virtual int calculerDistance(int x1, int y1, int x2, int y2) const { return 0; }
 };
-

@@ -18,6 +18,8 @@
 #include "Arene.h"
 #include "XBot1.h"
 #include "XBot2.h"
+#include "AreneFinale.h"
+#include "FabriqueXBots.h"
 
 /*
 
@@ -485,8 +487,7 @@ int main2()
 } */
 
 
-
-void (testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu)){
+/*void(testChargementEquipes(Equipe& equipeRouge, Equipe* equipeBleu)) {
 	 // AJOUTER 4 XBOTS à l’équipe ROUGE
 	cout << "\n Chargement des xbots, equipe Rouge \n";
 	XBot* rougeBot1 = new XBot("rougeBot1");
@@ -557,9 +558,10 @@ void(testChargementEquipesHeritage(Equipe& equipeRouge, Equipe* equipeBleu)) {
 	equipeBleu->getNombreXBots();
 
 	
-}
+}*/
 
-int main() {
+/*
+int main3() {
 	cout << "Realise par Wilson FOTSING  et Laurent Fabrice NGWE \n" ;
 	 //CRÉER l’équipe ROUGE de 4 XBots sur la pile (stack) 
 	Equipe equipeRouge("ROUGE", 4) ;
@@ -571,7 +573,7 @@ int main() {
 
     //testChargementEquipes(equipeRouge, equipeBleu);
 
-	testChargementEquipesHeritage(equipeRouge,equipeBleu);
+	//testChargementEquipesHeritage(equipeRouge,equipeBleu);
 
 
 	cout << endl;
@@ -590,5 +592,25 @@ int main() {
 	
 	 
 	return 0; 
-}
+}*/
 
+int main() {
+	{
+		AreneFinale arene;
+		FabriqueXBots fabriqueXBots;
+		Equipe* equipeRouge = fabriqueXBots.creerEquipeXBot(10, "Rouge"); 
+		Equipe* equipeBleu = fabriqueXBots.creerEquipeXBot(10, "Bleu");
+
+		arene.setEquipes(equipeRouge, equipeBleu);
+		arene.debuterCombat();
+
+		delete equipeRouge; 
+		delete equipeBleu; 
+
+		cout << Compteur::getInformation() << endl ; 
+		cin.get(); 
+		return 0;
+
+
+	}
+}

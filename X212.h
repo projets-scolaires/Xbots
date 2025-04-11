@@ -5,7 +5,7 @@
 
 using namespace std ;
 
-class X212
+class X212 
 {
 	private :
 	   string nom ;

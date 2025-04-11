@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -128,34 +128,49 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arene.cpp" />
+    <ClCompile Include="AreneFinale.cpp" />
     <ClCompile Include="Compteur.cpp" />
     <ClCompile Include="Equipe.cpp" />
-    <ClCompile Include="fabriqueXBots.cpp" />
+    <ClCompile Include="FabriqueXBots.cpp" />
     <ClCompile Include="G990.cpp" />
+    <ClCompile Include="G990Adapter.cpp" />
+    <ClCompile Include="Hasard.cpp" />
     <ClCompile Include="projet1.cpp" />
     <ClCompile Include="R234.cpp" />
+    <ClCompile Include="R234Adapter.cpp" />
     <ClCompile Include="TesteurXBots.cpp" />
     <ClCompile Include="W000.cpp" />
+    <ClCompile Include="W000Adapter.cpp" />
     <ClCompile Include="X212.cpp" />
+    <ClCompile Include="X212Adapter.cpp" />
     <ClCompile Include="X213.cpp" />
+    <ClCompile Include="X213Adapter.cpp" />
     <ClCompile Include="X215.cpp" />
+    <ClCompile Include="X215Adapter.cpp" />
     <ClCompile Include="XBot.cpp" />
     <ClCompile Include="XBot1.cpp" />
     <ClCompile Include="XBot2.cpp" />
-    <ClCompile Include="XBotInterface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arene.h" />
+    <ClInclude Include="AreneFinale.h" />
     <ClInclude Include="Compteur.h" />
     <ClInclude Include="Equipe.h" />
-    <ClInclude Include="fabriqueXBots.h" />
+    <ClInclude Include="FabriqueXBots.h" />
     <ClInclude Include="G990.h" />
+    <ClInclude Include="G990Adapter.h" />
+    <ClInclude Include="Hasard.h" />
     <ClInclude Include="R234.h" />
+    <ClInclude Include="R234Adapter.h" />
     <ClInclude Include="TesteurXBots.h" />
     <ClInclude Include="W000.h" />
+    <ClInclude Include="W000Adapter.h" />
     <ClInclude Include="X212.h" />
+    <ClInclude Include="X212Adapter.h" />
     <ClInclude Include="X213.h" />
+    <ClInclude Include="X213Adapter.h" />
     <ClInclude Include="X215.h" />
+    <ClInclude Include="X215Adapter.h" />
     <ClInclude Include="XBot.h" />
     <ClInclude Include="XBot1.h" />
     <ClInclude Include="XBot2.h" />

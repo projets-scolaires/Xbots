@@ -23,10 +23,10 @@ Arene::~Arene()
 void Arene::debuterCombat() {
 	cout << " debut du combat \n ";
 	for (Equipe* equipe : this->equipes) {
-		for (int i = 0; i < equipe->getNombreXBots(); i++) {
+		for (int i = 0; i < 10 ; i++) {
 			int x = 0;
 			int y = 0;
-			equipe->getXBot(i).EstFonctionnel();
+			equipe->getXBot(i).estFonctionnel();
 			equipe->getXBot(i).bouger(2, 4, x, y, 5, 1);
 			equipe->getXBot(i).bouger(1, 3, x, y, 0, 6);
 			equipe->getXBot(i).attaquer(1, 2, 3, 4);
