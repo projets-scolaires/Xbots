@@ -33,8 +33,8 @@ Equipe::~Equipe()
 {
 	for (XBotInterface* xBot : xBots) {
 		delete xBot ;  
-		Compteur::ajouterDestructeur();
 	}
+	Compteur::ajouterDestructeur();
 }
 
 

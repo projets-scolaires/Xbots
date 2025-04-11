@@ -8,7 +8,7 @@ X215::X215()
 	setForce(0);
 	setVitesse(0);
 	setVision(0);
-	//Compteur::ajouterConstructeur();
+	Compteur::ajouterConstructeur();
 }
 
 X215::X215(string nom, int direction, int force, int vitesse, int vision)

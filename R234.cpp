@@ -7,7 +7,7 @@ R234::R234()
 	setStrength(0);
 	setSpeed(0);
 	setRange(0);
-	//Compteur::ajouterConstructeur();
+	Compteur::ajouterConstructeur();
 }
 
 R234::R234(int direction, int strenght, int speed, int range)

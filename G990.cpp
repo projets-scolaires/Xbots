@@ -11,7 +11,7 @@ G990::G990()
 	setEnergiePhysique(0);
 	setEnergieMaximale(0);
 	setVision(0);
-	//Compteur::ajouterConstructeur();
+	Compteur::ajouterConstructeur();
 
 }
 

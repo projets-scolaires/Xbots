@@ -1,4 +1,5 @@
 #include "fabriqueXBots.h"
+#include"Hasard.h"
 
 FabriqueXBots::FabriqueXBots()
 {
@@ -17,7 +18,31 @@ FabriqueXBots::~FabriqueXBots()
 
 Equipe* FabriqueXBots::creerEquipeXBot(int nbrXBotACreer, string nomEquipe)
 {
-	return nullptr;
+	Equipe* equipe = new Equipe(nomEquipe);
+	for (int n = 0; n < nbrXBotACreer; n++) {
+		int nbrAleatoire = hasard.recupererValeurAleatoire(0,5); 
+		switch (nbrAleatoire) {
+		case 0 : 
+			equipe->ajouterXBot(new X212Adapter(new X212()), n);
+			break;
+		case 1 :
+			equipe->ajouterXBot(new X213Adapter(new X213()), n);
+			break;
+		case 2 :
+			equipe->ajouterXBot(new X215Adapter(new X215()), n);
+			break;
+		case 3 :
+			equipe->ajouterXBot(new G990Adapter(new G990), n);
+			break;
+		case 4 :
+			equipe->ajouterXBot(new R234Adapter(new R234), n);
+			break;
+		case 5 :
+			equipe->ajouterXBot(new W000Adapter(new W000), n);
+			break; 
+		}
+	}
+	return equipe ; 
 }
 
 X212Adapter* FabriqueXBots::creerX212() const

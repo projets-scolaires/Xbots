@@ -607,10 +607,8 @@ int main() {
 		delete equipeRouge; 
 		delete equipeBleu; 
 
-		cout << Compteur::getInformation() << endl ; 
-		cin.get(); 
-		return 0;
-
-
 	}
+	cout << Compteur::getInformation() << endl;
+	cin.get();
+	return 0;
 }

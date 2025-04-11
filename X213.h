@@ -12,7 +12,7 @@ private :
 	int vitesse;
 	int vision;
 public :
-	X213(); //Contructeur par defaut
+	X213();
 	X213(string nom, int direction, int force, int vitesse, int vision);
 	//constructeur
 	~X213(); //destructeur

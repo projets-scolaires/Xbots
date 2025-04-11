@@ -9,7 +9,7 @@ X212::X212()
 	setForce(0);
 	setVitesse(0);
 	setVision(0);
-	//Compteur::ajouterConstructeur();
+	Compteur::ajouterConstructeur();
 }
 
 X212::X212(string nom, int direction, int force, int vitesse, int vision)

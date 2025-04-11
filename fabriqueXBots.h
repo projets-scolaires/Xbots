@@ -8,6 +8,7 @@
 #include"G990Adapter.h"
 #include"R234Adapter.h"
 #include"W000Adapter.h"
+#include "Hasard.h"
 
 #include<iostream>
 using namespace std;
@@ -27,5 +28,8 @@ public :
 	G990Adapter* creerG990() const; 
 	R234Adapter* creerR234() const; 
 	W000Adapter* creerW000Adapter(); 
+	Hasard hasard;
+
+
 };
 
